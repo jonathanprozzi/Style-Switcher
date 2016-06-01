@@ -1,0 +1,35 @@
+
+#reset-button {
+    background-color: darkcyan;
+    color: whitesmoke;
+}
+
+#red-button:hover {
+    background-color: indianred;
+    color: darkred;
+}
+
+#green-button:hover {
+    background-color: lightseagreen;
+    color: green;
+}
+
+#blue-button:hover {
+    background-color: deepskyblue;
+    color: midnightblue;
+}
+
+.redify {
+    background-color: indianred;
+    color: darkred;
+}
+
+.greenify {
+    background-color: lightseagreen;
+    color: darkgreen;
+}
+
+.blueify {
+    background-color: deepskyblue;
+    color: midnightblue;
+}
