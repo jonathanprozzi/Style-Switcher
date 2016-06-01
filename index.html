@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Style Switcher!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- bootstrap for the main page style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <section class="page-header">
+                <div class="jumbotron">
+                    <h1 class="h1 non-mod">Style-Switcher App!</h1>
+                    <p class="lead non-mod">This is a fun project where you can enter an element type and then switch the style to be either red, blue, or green. Have fun!</p>
+                </div>
+                <!-- end header-elements div -->
+            </section>
+            <!-- end header-content section -->
+        </div>
+        <!-- end container div -->
+    </header>
+    
+    <div class="container">
+        <section class="main-content">
+            <div id="label-input" class="well">
+                <h2 id="label-header">Enter the element type you want to change:</h2>
+                <input id="styleType" type="text" value="h2"></input>
+                <button class="btn btn-default" id="red-button">Red!</button>
+                <button class="btn btn-default" id="blue-button">Blue!</button>
+                <button class="btn btn-default" id="green-button">Green!</button>
+                <button class="btn btn-default" id="reset-button">Reset!</button>
+                <p class="lead instruction">Enter an html element and choose a color to modify the style!</p>
+                <hr/>
+            </div>
+            <hr/>
+            <!-- end the label -->
+
+            <div class="mod-elements well">
+                <h1 class="modify">This is an h1!</h1>
+                <p class="lead">Business plan growth hacking advisor partnership. Ramen funding buzz mass market hackathon churn rate alpha. User experience launch party customer. Business-to-business social media A/B testing.</p>
+                <h2 class="modify">This is an h2!</h2>
+                <p class="lead">Traction lean startup iPad responsive web design holy grail buzz growth hacking branding. Client validation seed money. Client entrepreneur accelerator analytics value proposition business-to-business ownership leverage monetization bootstrapping paradigm shift network effects direct mailing technology. Buyer research and development launch party.</p>
+                <ol>
+                    <li>Numbered item 1</li>
+                    <li>Numbered item 2</li>
+                    <li>Numbered item 3</li>
+                </ol>
+                <h3 id="modify">This is an h3!</h3>
+                <p class="lead">Business plan supply chain low hanging fruit funding direct mailing rockstar responsive web design growth hacking business-to-consumer deployment virality. Direct mailing niche market startup channels. Business-to-consumer business plan first mover advantage. Release twitter vesting period gen-z user experience android.</p>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+                <p class="lead">Responsive web design value proposition pitch startup equity traction android business-to-consumer. User experience gen-z mass market buyer return on investment bandwidth metrics technology iPad traction. Churn rate handshake startup MVP lean startup marketing strategy social media conversion validation pitch. Churn rate angel investor ecosystem crowdfunding MVP.</p>
+            </div>
+            <!-- end the modifyable elements section -->
+        </section>
+        <!-- end the main-content section -->
+    </div>
+    <!-- end container -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
