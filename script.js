@@ -1,5 +1,5 @@
 (function () {
-
+    
     console.log('initial element: ' + styleType);
     var redButton = document.getElementById('red-button');
     var blueButton = document.getElementById('blue-button');
@@ -89,15 +89,35 @@
             if (styleEle[i].classList.contains("redify")) {
                 styleEle[i].classList.remove("redify");
             };
-
+            
+            sendBack.className += " testify";
             styleEle[i].className += " blueify";
         }
     }
 
+    var mouseOver = document.addEventListener('mouseover', function(event) {
+        var testMouse = event.target.nodeName;
+        console.log('mouse over: ' + testMouse);
+        var clickTest = testMouse;
+        var clickEle = document.getElementsByTagName(clickTest);
+       
+        for (var i = 0; i < clickEle.length; i++) {
+            console.log('is it iterating? ' + clickEle[i]);
+            clickEle[i].addEventListener('click', function(event) {
+            var styleTypeEle = event.target.nodeName;   
+            console.log('did it work? ' + styleTypeEle);     
+            var testDiv = document.getElementById('testDiv');
+            testDiv.innerHTML = styleTypeEle;
+            })
+        } // end for loop
+                    styleTypeEle.className += " redify";
+    //    var styleTest = document.getElementsByTagName(styleTypeEle);
+    //    console.log(styleTypeEle.length);
+    }, false); // end mouseOver event    
+    
 
     redButton.addEventListener('click', redShift, false);
     greenButton.addEventListener('click', greenShift, false);
     blueButton.addEventListener('click', blueShift, false);
     resetButton.addEventListener('click', resetShift, false);
-
 })();
