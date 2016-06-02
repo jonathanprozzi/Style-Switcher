@@ -1,4 +1,4 @@
-var styleSwitcher = function () {
+(function () {
 
     console.log('initial element: ' + styleType);
     var redButton = document.getElementById('red-button');
@@ -100,4 +100,4 @@ var styleSwitcher = function () {
     blueButton.addEventListener('click', blueShift, false);
     resetButton.addEventListener('click', resetShift, false);
 
-}();
+})();
